@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MusicAppStructure</string>
+
+    <string name="now_playing_label">Now Playing</string>
+    <string name="now_playing_description">This activity works as welcome/now playing activity. It
+        will have the buttons to control the playback (play/pause, stop, next, previous)and an image of the album/song
+        being played. From here we can access the artists library activity.Picasso library (for image processing)
+        and MediaPlayer and Audiomanager (for the music processing) classes will be used.</string>
+
+    <string name="library_launcher_button">Artist Library</string>
+
+    <string name="artist_lib_label">Artists Library</string>
+    <string name="artist_lib_description">Shows a list of the artists in the user library, using a ListView and an ArrayAdapter.
+        Has a play button in each artist view that returns to Now Playing and starts the mediaplayer and another button to access
+        the artist\'s albums activity. There´s also a back button to access the Now Playing activity.</string>
+
+    <string name="artist_example_label">Artist</string>
+    <string name="artist_example_subtext">See Albums</string>
+    <string name="library_play_button">Play</string>
+    <string name="see_albums">See Albums</string>
+
+    <string name="album_label">Albums</string>
+    <string name="album_description">This activity loads a list of albums of the artist it was lauched from.
+        To do so, it will use a CursorLoader that will query and load information from an SQLite Database
+        that stores the albums of all the available artists, and show it in a ListView using a CursorAdapter.
+        Every album has a playbutton that stars playing the album in the NowPlaying activity and a "buy" button
+        to so the user can buy that specific album in the Shopping activity. There´s also a back button to access
+        the Now Playing activity.</string>
+
+    <string name="album_example_label">Album</string>
+    <string name="buy_button_album">Buy Album</string>
+
+    <string name="shopping_label">Shopping activity</string>
+    <string name="shopping_description">Uses Android Pay API to manage payments of the the album from which was
+        lauched from. In order to do so, both the androd manifest and the build.gradle files need to be modified.
+        The Buy button will send an intent dto open Android Pay app, after verifying that the user has it installed,
+        and the result will be available in the callback from onActivityResult().</string>
+
+    <string name="buy_button_shopping">Buy with Android Pay!</string>
+</resources>

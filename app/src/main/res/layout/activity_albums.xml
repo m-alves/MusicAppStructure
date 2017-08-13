@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/album_label"
+        style="@style/style_label"/>
+
+    <TextView
+        android:text="@string/album_description"
+        style="@style/style_description"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/artist_example_label"
+            android:text="@string/artist_example_label"
+            style="@style/style_artist_label"/>
+
+        <TextView
+            android:id="@+id/album_example_label"
+            android:text="@string/album_example_label"
+            style="@style/style_artist_label"
+            android:layout_below="@+id/artist_example_label"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_button_album"
+            android:text="@string/library_play_button"
+            android:layout_toLeftOf="@+id/buy_button_album"
+            android:layout_marginTop="8dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buy_button_album"
+            android:text="@string/buy_button_album"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            />
+
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>
